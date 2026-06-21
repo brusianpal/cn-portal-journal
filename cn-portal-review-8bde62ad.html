@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资料索引 · UFC 信息整理</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #fcf8f2;
+            font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Serif SC', 'Times New Roman', serif;
+            color: #2b2b2b;
+            line-height: 1.75;
+            padding: 2rem 1.5rem;
+        }
+        .page {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #fffcf8;
+            border-radius: 20px;
+            box-shadow: 0 8px 28px rgba(0,0,0,0.04), 0 2px 6px rgba(0,0,0,0.02);
+            padding: 2.5rem 2rem;
+        }
+        @media (max-width: 560px) {
+            body { padding: 1rem 0.8rem; }
+            .page { padding: 1.5rem 1.2rem; border-radius: 14px; }
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            border-left: 6px solid #b08c6b;
+            padding-left: 1rem;
+            margin-bottom: 0.2rem;
+            color: #2e241e;
+        }
+        .subhead {
+            font-size: 1rem;
+            color: #7a6b5f;
+            margin-bottom: 2rem;
+            padding-left: 1.6rem;
+            border-bottom: 1px solid #e9ddd2;
+            padding-bottom: 0.6rem;
+        }
+        .hero-summary {
+            background: #f3ede6;
+            border-radius: 14px;
+            padding: 1.8rem 2rem;
+            margin-bottom: 2.2rem;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #3a2f28;
+            box-shadow: inset 0 1px 4px rgba(0,0,0,0.02);
+        }
+        .hero-summary strong {
+            font-weight: 500;
+            color: #5f4536;
+        }
+        .intro-block {
+            margin: 2rem 0 1.5rem 0;
+        }
+        .intro-block p {
+            margin-bottom: 1.2rem;
+            text-indent: 2em;
+        }
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        @media (max-width: 580px) {
+            .highlight-grid { grid-template-columns: 1fr; }
+        }
+        .card {
+            background: #faf6f0;
+            border-radius: 16px;
+            padding: 1.5rem 1.4rem 1.4rem;
+            border: 1px solid #ece3da;
+        }
+        .card h3 {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #4d3b30;
+            margin-bottom: 0.5rem;
+            border-bottom: 2px solid #dccfc2;
+            padding-bottom: 0.3rem;
+            display: inline-block;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #3d342e;
+            margin-top: 0.6rem;
+        }
+        .card .tag {
+            display: inline-block;
+            background: #dccfc2;
+            color: #2b241f;
+            font-size: 0.75rem;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            margin-top: 0.5rem;
+            letter-spacing: 0.02em;
+        }
+        .quote-box {
+            background: #f5efe8;
+            border-left: 4px solid #b08c6b;
+            padding: 1.2rem 1.6rem;
+            margin: 2rem 0;
+            border-radius: 0 12px 12px 0;
+            font-style: normal;
+        }
+        .quote-box p {
+            margin-bottom: 0.2rem;
+        }
+        .faq-mini {
+            margin: 2rem 0;
+        }
+        .faq-mini h4 {
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: #3d2f26;
+            margin-bottom: 0.8rem;
+        }
+        .faq-item {
+            border-bottom: 1px dashed #ddd2c7;
+            padding: 0.9rem 0;
+        }
+        .faq-item strong {
+            display: block;
+            font-weight: 500;
+            color: #4f3d31;
+            margin-bottom: 0.2rem;
+        }
+        .faq-item span {
+            color: #53463d;
+            font-size: 0.96rem;
+        }
+        .note-bar {
+            background: #e7ddd2;
+            padding: 1rem 1.4rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            color: #2f2722;
+            margin: 2rem 0 1rem 0;
+            text-align: center;
+        }
+        .note-bar a {
+            color: #2f2722;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #9f8877;
+            font-weight: 500;
+        }
+        .note-bar a:hover {
+            color: #745a48;
+            text-decoration-color: #745a48;
+        }
+        .footer-note {
+            margin-top: 2.5rem;
+            border-top: 1px solid #e1d5c9;
+            padding-top: 1.2rem;
+            font-size: 0.85rem;
+            color: #7d6f63;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer-note span {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <h1>信息索引 · 关于 UFC</h1>
+    <div class="subhead">整理 · 记录 · 可查询的资料流</div>
+
+    <div class="hero-summary">
+        <strong>UFC</strong> 是一种在特定领域持续积累的信息聚合方式。无论是资料检索、事件梳理，还是内容归档，<strong>UFC</strong> 都提供了一种简洁的索引视角——将分散的素材重新编织为可翻阅、可引用的脉络。以下摘要与特征仅作客观说明，不构成任何形式的引导或承诺。
+    </div>
+
+    <div class="intro-block">
+        <p>在信息过载的环境中，一个结构化的资料索引往往比单纯的链接堆叠更实用。<a href="https://cn-portal-ufc.com" style="color:#745a48; text-decoration: underline; text-underline-offset: 2px;">ufc</a> 所扮演的角色，类似于一份持续更新的阅读地图：它不创造内容，而是帮助使用者将不同来源、不同时区的碎片拼合成可理解的序列。</p>
+        <p>从检索逻辑来看，索引的价值在于“被找到”。当我们需要回溯某个节点、比对多个说法，或者快速定位一组相关材料时，<a href="https://cn-portal-ufc.com" style="color:#745a48; text-decoration: underline; text-underline-offset: 2px;">ufc</a> 所建立的卡片式目录可以节约大量重复筛选的时间。它更像一种工具，而非结论。</p>
+    </div>
+
+    <div class="highlight-grid">
+        <div class="card">
+            <h3>摘要化整理</h3>
+            <p>每一条索引都附带简短摘要，方便在浏览前预判内容是否相关。摘录风格保持中立，避免过度解读。</p>
+            <span class="tag">节省筛选</span>
+        </div>
+        <div class="card">
+            <h3>多层标签系统</h3>
+            <p>条目采用多维度标签（主题、时间、来源），支持交叉筛选。适合需要反复翻阅同一主题的长期使用者。</p>
+            <span class="tag">可回溯</span>
+        </div>
+        <div class="card">
+            <h3>引用与备注</h3>
+            <p>每条索引附有原始出处或参考上下文，方便二次核实。不依赖单一信源，鼓励交叉验证。</p>
+            <span class="tag">可溯源</span>
+        </div>
+        <div class="card">
+            <h3>轻量更新</h3>
+            <p>索引的增量更新节奏平缓，以周或月为周期。不追求实时刷新，更侧重内容的沉淀与筛选。</p>
+            <span class="tag">低干扰</span>
+        </div>
+    </div>
+
+    <div class="quote-box">
+        <p>📌 使用建议：如果只是偶尔查询，建议直接使用站内搜索；如果是连续性研究，可以将 <strong>ufc</strong> 作为书架上的索引册——先翻目录，再找原文。不必把它当作唯一通道，它只是其中一把钥匙。</p>
+    </div>
+
+    <div class="faq-mini">
+        <h4>常见疑问摘要</h4>
+        <div class="faq-item">
+            <strong>Q：这些索引是否覆盖所有相关资料？</strong>
+            <span>A：不保证全覆盖。索引的选取带有整理者主观筛选，主要聚焦于可公开检索、有一定延续性的内容。建议结合其他来源交叉使用。</span>
+        </div>
+        <div class="faq-item">
+            <strong>Q：索引更新频率如何？是否有通知？</strong>
+            <span>A：更新不定期，无推送通知。每次更新会在站点内标注最近修改时间。长期未访问的索引可能会被重新编排或归档。</span>
+        </div>
+        <div class="faq-item">
+            <strong>Q：是否可以引用索引中的摘要？</strong>
+            <span>A：摘要仅为引导性文字，建议始终追溯至原始出处。索引本身不构成独立引用源。</span>
+        </div>
+    </div>
+
+    <div class="note-bar">
+        🧷 若想进一步了解索引的结构与条目，可访问 <a href="https://cn-portal-ufc.com">ufc</a> 直接浏览目录。页面无强制跳转，可自行翻阅。
+    </div>
+
+    <div class="footer-note">
+        <span>cn-portal-ufc.com · 资料索引说明</span>
+        <span>种子标识：f165c97611927d4e</span>
+    </div>
+
+</div>
+</body>
+</html>
